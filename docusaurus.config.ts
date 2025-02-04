@@ -5,8 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Pace Data Science Club',
+  tagline: 'We are a passionate community of students, researchers, and professionals dedicated to exploring the world of data science, machine learning, artificial intelligence, and analytics. Our mission is to create a collaborative environment where members can learn, innovate, and apply data-driven techniques to solve real-world problems.',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -17,8 +17,8 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'MDDS-Pace', // Usually your GitHub org/user name.
+  projectName: 'club_site', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -65,13 +65,13 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    // Replace with pace data science club social card
+    image: 'img/pdsc-logo.jpeg',
     navbar: {
-      title: 'My Site',
+      title: 'Pace Data Science Club',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'Pace Data Science Club',
+        src: 'img/pdsc-logo.jpeg',
       },
       items: [
         {
@@ -126,12 +126,12 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/PaceDSClub/PaceDSClub',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Pace Data Science Club. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,

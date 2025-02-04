@@ -11,32 +11,31 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
+    title: 'Collaboration',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Encouraging teamwork and knowledge sharing among members to foster a supportive learning environment. Collaboration allows members to tackle complex data science problems together and learn from each other’s perspectives.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Continuous Learning',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        {/* Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
+        ahead and move your docs into the <code>docs</code> directory. */}
+        Emphasizing the importance of ongoing education and skill development in the rapidly evolving field of data science. This value can inspire members to stay curious, explore new technologies, and participate in workshops, hackathons, or study groups.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Integrity',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Promoting ethical practices in data handling, analysis, and reporting. Integrity ensures that members understand the importance of data privacy, responsible use of data, and transparency in their work, fostering trust within the club and the broader community.
       </>
     ),
   },
