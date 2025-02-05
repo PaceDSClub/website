@@ -2,46 +2,38 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+<!-- # About the Club in general -->
 
-Let's discover **Docusaurus in less than 5 minutes**.
+# About The Pace Data Science Club
 
-## Getting Started
+## Who We Are
+Welcome to the **Pace Data Science Club**, a community of students, professionals, and data enthusiasts passionate about leveraging data for insights, innovation, and impact. Our club provides a collaborative space for learning, networking, and hands-on experience in the ever-evolving field of data science.
 
-Get started by **creating a new site**.
+## Our Mission
+We aim to:
+- **Educate** members on data science concepts, tools, and real-world applications.
+- **Collaborate** on projects, competitions, and research to solve real-world problems.
+- **Connect** students with industry professionals and career opportunities.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+## Our Values
+- **Collaboration:** We believe in teamwork, knowledge sharing, and fostering a supportive learning environment.
+- **Continuous Learning:** Data science is ever-evolving, and we encourage our members to stay curious and expand their skills.
+- **Integrity:** We promote ethical data practices, transparency, and responsibility in handling data.
 
-### What you'll need
+## What We Offer
+- **Workshops & Bootcamps** – Hands-on sessions covering machine learning, AI, data visualization, and more.
+- **Guest Speaker Events** – Talks by industry experts from leading tech and data-driven companies.
+- **Hackathons & Competitions** – Participate in challenges that enhance your problem-solving skills.
+- **Networking Opportunities** – Connect with peers, alumni, and professionals to build your career.
+- **Projects & Research** – Work on real-world data science projects to build your portfolio.
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+## Join Us
+Interested in data science? Whether you're a beginner or an experienced data enthusiast, there's a place for you here! Stay updated on our events, projects, and opportunities by following us on LinkedIn and joining our community.
 
-## Generate a new site
+📧 **Contact us:** dsclub@pace.edu
 
-Generate a new Docusaurus site using the **classic template**.
+🌍 **LinkedIn:** https://www.linkedin.com/company/pace-data-science-club/
 
-The classic template will automatically be added to your project after you run the command:
+📍 **Location:** One Pace Plaza, New York, NY 10038
 
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+# Let's unlock the power of data together!
