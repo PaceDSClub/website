@@ -10,10 +10,13 @@ sidebar_position: 1
 Welcome to the **Pace Data Science Club**, a community of students, professionals, and data enthusiasts passionate about leveraging data for insights, innovation, and impact. Our club provides a collaborative space for learning, networking, and hands-on experience in the ever-evolving field of data science.
 
 ## Our Mission
-We aim to:
-- **Educate** members on data science concepts, tools, and real-world applications.
-- **Collaborate** on projects, competitions, and research to solve real-world problems.
-- **Connect** students with industry professionals and career opportunities.
+The Pace Data Science Club aims to facilitate a thriving community on campus by:
+- Fostering interest in Data Science.
+- Providing exposure to industry standards and best practices.
+- Solving real-world Data Science problems for the community.
+- Presenting members a platform to broadcast their work.
+- Pairing mentors and mentees within the community.
+- Connecting students with industry professionals and career opportunities.
 
 ## Our Values
 - **Collaboration:** We believe in teamwork, knowledge sharing, and fostering a supportive learning environment.
@@ -30,7 +33,7 @@ We aim to:
 ## Join Us
 Interested in data science? Whether you're a beginner or an experienced data enthusiast, there's a place for you here! Stay updated on our events, projects, and opportunities by following us on LinkedIn and joining our community.
 
-📧 **Contact us:** dsclub@pace.edu
+📧 **Contact us:** pacedsclub@pace.edu
 
 🌍 **LinkedIn:** https://www.linkedin.com/company/pace-data-science-club/
 
