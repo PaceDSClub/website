@@ -5,7 +5,57 @@
  */
 
 /* You can override the default Infima variables here. */
+/* In your custom.css */
+html {
+  scroll-behavior: smooth;
+}
+/* In your custom.css */
+html {
+  scroll-behavior: smooth;
+}
+
+/* For Safari compatibility */
+@supports (-webkit-overflow-scrolling: touch) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+/* In your custom.css */
+html {
+  scroll-behavior: smooth;
+  /* Optional: Adjust scrolling speed */
+  --scroll-duration: 1000ms; /* Default is usually around 500ms */
+  /* Optional: Change the timing function */
+  --scroll-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.docs-wrapper,
+.blog-wrapper {
+  scroll-behavior: smooth;
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+/* Basic smooth scroll */
 :root {
+  scroll-behavior: smooth;
+}
+
+/* Respect user preferences */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    scroll-behavior: auto;
+  }
+}
+
+/* Safari fix */
+@supports (-webkit-overflow-scrolling: touch) {
+  :root {
+    scroll-behavior: auto;
+  }
+}
+/* :root {
   --ifm-color-primary: #2e8555;
   --ifm-color-primary-dark: #29784c;
   --ifm-color-primary-darker: #277148;
@@ -15,7 +65,7 @@
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-}
+} */
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
@@ -28,7 +78,8 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3); */
   /* #f8f7c4 */
-  --ifm-color-primary: #fcba03;
+  /* --ifm-color-primary: #fcba03; */
+  --ifm-color-primary: #002D72;
   --ifm-color-primary-dark: #fcba03;
   --ifm-color-primary-darker: #fcba03;
   --ifm-color-primary-darkest: #fcba03;
@@ -38,33 +89,61 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 
   /* overrides */
-  --ifm-color-primary: #FEB81A;
-  --ifm-navbar-background-color: #FFFFFF;
-  --ifm-color-emphasis-0: #0f2861 !important;
+  --ifm-color-primary: #FEB81A !important;
+  --ifm-navbar-background-color: #FFFFFF !important;
+  --ifm-color-emphasis-0: #FEB81A !important;
   --ifm-background-color: #FFFFFF !important;
   --ifm-color-content: #002D72 !important;
   --ifm-link-color:var(--ifm-button-border-color) !important;
   --ifm-button-background-color: #002D72 !important;
-  --ifm-button-border-color: #FEB81A !important;
   --ifm-footer-background-color: #002D72 !important;
-  --ifm-footer-color: #FFFFFF !important;
+}
+.hero--primary {
+  background-color: #002D72 !important;
+  color: #FEB81A !important;
+}
+.navbar__link:hover, .navbar__link--active {
+  color: #FEB81A !important;
+}
+.hash-link {
+  display: none !important;
+}
+.markdown > h2 {
+  color: #002D72 !important;
+  cursor: pointer;
+}
+.markdown strong {
+  color: #002D72 !important;
 }
 .footer--dark {
-  --ifm-footer-background-color: #0f2861 !important;
+  --ifm-footer-background-color: #FEB81A !important;
+  color: #002D72 !important;
+}
+.footer__title,
+.footer__items,
+.footer__link-item {
+  color: #002D72 !important;
+  font-weight: 900;
 }
 
 :where(.button--secondary) {
   --ifm-button-background-color: #002D72 !important;
-  --ifm-button-border-color: #FEB81A !important;
+  --ifm-button-border-color: #FFFFFF !important;
   color: #FFFFFF !important;
-  padding: 1rem !important;
+  padding: 1rem 5rem !important;
+  margin: 3rem !important;
+}
+:where(.button--secondary):not(.button--outline):hover {
+  --ifm-button-background-color: #FFFFFF !important;
+  --ifm-button-border-color: #FEB81A !important;
+  color: #002d72 !important;
 }
 /* commenting the aside - sidebar */
 .menu_SIkG {
   display: none;
 }
 .sidebar_njMd {
-  background-color: #FEB81A !important;
+  background-color: #0f2861 !important;
 }
 .table-of-contents {
   color: #002D72 !important;
@@ -79,6 +158,11 @@ a.theme-edit-this-page {
 .clean-btn {
   display: none !important;
 }
+.hero__title {
+  padding: 2rem !important;
+  text-align: center;
+}
 .hero__subtitle {
-  text-align: justify;
+  padding: 2rem !important;
+  text-align: center;
 }

@@ -104,7 +104,7 @@ const config: Config = {
           items: [
             {
               label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              href: 'https://discord.gg/BREGCE94',
             }
           ],
         },
@@ -122,7 +122,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Pace Data Science Club. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Pace Data Science Club.`,
     },
     prism: {
       theme: prismThemes.github,
