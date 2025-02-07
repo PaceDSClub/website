@@ -3,13 +3,13 @@ name: Deploy to GitHub Pages
 on:
   pull_request:
     branches:
-      - main
+      - main  # Ensure only PRs targeting the 'main' branch trigger the pipeline
     types:
-      - closed  # Ensures it runs only when PR is closed (merged or not)
+      - closed  # Runs only when PR is closed (merged or not)
 
 jobs:
   build:
-    if: github.event.pull_request.merged == true  # Ensures it runs only on merge
+    if: github.event.pull_request.merged == true  # Ensures it runs only on merge to main
     name: Build Docusaurus
     runs-on: ubuntu-latest
     steps:
@@ -34,7 +34,7 @@ jobs:
   deploy:
     name: Deploy to GitHub Pages
     needs: build
-    if: github.event.pull_request.merged == true  # Ensures it runs only on merge
+    if: github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'main'  # Ensures deployment only happens for merges to main
 
     # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
     permissions:
