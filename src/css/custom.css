@@ -28,12 +28,57 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3); */
   /* #f8f7c4 */
-  --ifm-color-primary: #f8f7c4;
-  --ifm-color-primary-dark: #f8f7c4;
-  --ifm-color-primary-darker: #f8f7c4;
-  --ifm-color-primary-darkest: #f8f7c4;
-  --ifm-color-primary-light: #f8f7c4;
-  --ifm-color-primary-lighter: #f8f7c4;
-  --ifm-color-primary-lightest: #f8f7c4;
+  --ifm-color-primary: #fcba03;
+  --ifm-color-primary-dark: #fcba03;
+  --ifm-color-primary-darker: #fcba03;
+  --ifm-color-primary-darkest: #fcba03;
+  --ifm-color-primary-light: #f2dea6;
+  --ifm-color-primary-lighter: #f4e3b3;
+  --ifm-color-primary-lightest: #fcba03;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+  /* overrides */
+  --ifm-color-primary: #FEB81A;
+  --ifm-navbar-background-color: #FFFFFF;
+  --ifm-color-emphasis-0: #0f2861 !important;
+  --ifm-background-color: #FFFFFF !important;
+  --ifm-color-content: #002D72 !important;
+  --ifm-link-color:var(--ifm-button-border-color) !important;
+  --ifm-button-background-color: #002D72 !important;
+  --ifm-button-border-color: #FEB81A !important;
+  --ifm-footer-background-color: #002D72 !important;
+  --ifm-footer-color: #FFFFFF !important;
+}
+.footer--dark {
+  --ifm-footer-background-color: #0f2861 !important;
+}
+
+:where(.button--secondary) {
+  --ifm-button-background-color: #002D72 !important;
+  --ifm-button-border-color: #FEB81A !important;
+  color: #FFFFFF !important;
+  padding: 1rem !important;
+}
+/* commenting the aside - sidebar */
+.menu_SIkG {
+  display: none;
+}
+.sidebar_njMd {
+  background-color: #FEB81A !important;
+}
+.table-of-contents {
+  color: #002D72 !important;
+  font-size: 1.5rem !important;
+  border-left: #002D72 !important
+}
+/* pagination hide, edit this page hidden breadcrumb */
+.pagination-nav,
+a.theme-edit-this-page {
+  display: none !important;
+}
+.clean-btn {
+  display: none !important;
+}
+.hero__subtitle {
+  text-align: justify;
 }
