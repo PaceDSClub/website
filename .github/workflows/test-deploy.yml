@@ -1,15 +1,16 @@
-name: Test deployment
+name: Deploy to GitHub Pages
 
 on:
   pull_request:
     branches:
       - main
-    # Review gh actions docs if you want to further define triggers, paths, etc
-    # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#on
+    types:
+      - closed  # Ensures it runs only when PR is closed (merged or not)
 
 jobs:
-  test-deploy:
-    name: Test deployment
+  build:
+    if: github.event.pull_request.merged == true  # Ensures it runs only on merge
+    name: Build Docusaurus
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -22,5 +23,31 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
-      - name: Test build website
+      - name: Build website
         run: npm run build
+
+      - name: Upload Build Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: build
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: build
+    if: github.event.pull_request.merged == true  # Ensures it runs only on merge
+
+    # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
+    permissions:
+      pages: write # to deploy to Pages
+      id-token: write # to verify the deployment originates from an appropriate source
+
+    # Deploy to the github-pages environment
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
