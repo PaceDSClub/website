@@ -80,7 +80,6 @@ const config: Config = {
           position: 'left',
           label: 'About',
         },
-        {to: '/team', label: 'Team', position: 'left'},
         {
           href: 'https://github.com/PaceDSClub',
           label: 'GitHub',
